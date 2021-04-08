@@ -1,0 +1,29 @@
+.header {
+  border-bottom: 1px solid var(--border-header);
+
+  &_contacts-list {
+    @include alignment;
+  }
+
+  &__contacts-item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__contacts-link {
+    @include alignment;
+    @include font($fw: 500, $lh: 16px, $ls: 0.02em);
+    @include paddings($pt: 32px, $pb: 32px);
+    color: var(--main-color);
+    transition: color 250ms var(--timing-function);
+  }
+
+  &__contacts-link:hover,
+  &__contacts-link:focus {
+    color: var(--accent-color);
+  }
+
+  &__contacts-icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}

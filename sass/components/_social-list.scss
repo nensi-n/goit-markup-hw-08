@@ -1,0 +1,29 @@
+.social-list {
+  @include alignment($jc: space-evenly);
+
+  &__item {
+    width: 44px;
+    height: 44px;
+  }
+
+  &__link {
+    @include alignment($jc: center);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: var(--icon-main-color);
+    background-color: var(--main-lite-color);
+    transition: background-color 250ms var(--timing-function),
+      color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--main-lite-color);
+      background-color: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,23 @@
+.logo {
+  font-family: var(--secondary-font);
+  @include font($fw: 700, $fs: 26px, $lh: 31px);
+  color: var(--accent-color);
+  display: inline-block;
+
+  &__header {
+    margin-right: 93px;
+    @include paddings(24px, 25px);
+  }
+
+  &__theme_durk {
+    color: var(--main-dark-color);
+  }
+
+  &__footer {
+    margin-bottom: 20px;
+  }
+
+  &__theme_light {
+    color: var(--main-lite-color);
+  }
+}

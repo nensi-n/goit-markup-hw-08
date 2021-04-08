@@ -1,0 +1,21 @@
+.contact-list {
+  &__link {
+    display: block;
+    @include font;
+    color: var(--transparant-color);
+    transition: color 250ms var(--timing-function);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link-address {
+    color: var(--main-lite-color);
+  }
+}

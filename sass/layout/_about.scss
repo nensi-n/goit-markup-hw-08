@@ -1,0 +1,36 @@
+.about {
+  @include paddings;
+
+  &__dscrptn {
+    @include font;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    @include font($fw: 700, $lh: 16px);
+    color: var(--second-color);
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+
+  &__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__container-icon {
+    @include alignment($jc: center);
+    width: 270px;
+    height: 120px;
+    background: var(--bckg-btn-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}

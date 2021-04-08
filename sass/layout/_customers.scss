@@ -1,0 +1,41 @@
+.customers {
+  @include paddings;
+
+  &__title {
+    @include font($fw: 700, $fs: 36px, $lh: 42px);
+    text-align: center;
+    color: var(--second-color);
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    @include alignment;
+  }
+
+  &__item {
+    width: 170px;
+    height: 90px;
+  }
+
+  &__link {
+    @include alignment($jc: center);
+    color: var(--icon-main-color);
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--icon-main-color);
+    border-radius: 4px;
+    transition: color 250ms var(--timing-function),
+      border-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    @include alignment($jc: center);
+    fill: currentColor;
+  }
+}
