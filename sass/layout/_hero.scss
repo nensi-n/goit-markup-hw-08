@@ -21,12 +21,12 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--main-lite-color);
-    width: 360px;
+    max-width: 360px;
     margin: 0 auto 30px;
 
     @media screen and(min-width: 1200px) {
       @include font($fw: 900, $fs: 44px, $lh: 60px, $ls: 0.06em);
-      width: 696px;
+      max-width: 696px;
     }
   }
 
