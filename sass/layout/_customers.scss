@@ -1,20 +1,58 @@
 .customers {
-  @include paddings;
+  @include paddings(60px, 60px);
+
+  @media screen and(min-width: 1200px) {
+    @include paddings;
+  }
 
   &__title {
-    @include font($fw: 700, $fs: 36px, $lh: 42px);
+    @include font($fw: 700, $fs: 28px, $lh: 33px);
     text-align: center;
     color: var(--second-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and(min-width: 1200px) {
+      @include font($fw: 700, $fs: 36px, $lh: 42px);
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
-    @include alignment;
+    @media screen and(min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -30px;
+      margin-bottom: -30px;
+      text-align: center;
+    }
+
+    @media screen and(min-width: 1200px) {
+      @include alignment;
+    }
   }
 
   &__item {
-    width: 170px;
-    height: 90px;
+    height: 92px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and(min-width: 480px) {
+      width: 210px;
+      flex-basis: calc(100% / 2 - 30px);
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and(min-width: 768px) {
+      width: 226px;
+      flex-basis: calc(100% / 3 - 30px);
+    }
+
+    @media screen and(min-width: 1200px) {
+      width: 170px;
+      flex-basis: auto;
+    }
   }
 
   &__link {

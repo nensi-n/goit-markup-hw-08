@@ -1,6 +1,10 @@
 .contact-list {
   &__link {
-    display: block;
+    //display: block;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    @include vertical-centering;
     @include font;
     color: var(--transparant-color);
     transition: color 250ms var(--timing-function);

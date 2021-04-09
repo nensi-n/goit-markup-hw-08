@@ -1,5 +1,10 @@
 .occupation {
+  display: none;
   @include paddings(0, 94px);
+
+  @media screen and(min-width: 1200px) {
+    display: block;
+  }
 
   &__title {
     @include font($fw: 700, $fs: 36px, $lh: 42px);

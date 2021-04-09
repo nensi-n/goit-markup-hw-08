@@ -15,3 +15,9 @@
   line-height: decimal-round($lh/$fs, 2);
   letter-spacing: $ls;
 }
+
+@mixin vertical-centering($dspl: flex, $fd: column, $ai: center) {
+  display: $dspl;
+  flex-direction: $fd;
+  align-items: $ai;
+}
