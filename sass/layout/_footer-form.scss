@@ -5,6 +5,10 @@
     color: var(--main-lite-color);
     margin-bottom: 20px;
     text-align: center;
+
+    @media screen and(min-width: 1200px) {
+      text-align-last: left;
+    }
   }
 
   &__container {
@@ -14,6 +18,9 @@
     //align-items: center;
     @include vertical-centering;
     //position: relative;
+    @media screen and(min-width: 1200px) {
+      flex-direction: row;
+    }
   }
 
   &__input {
@@ -37,6 +44,16 @@
     &:focus {
       color: var(--main-lite-color);
       box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    }
+
+    @media screen and(min-width: 768px) {
+      width: 450px;
+    }
+
+    @media screen and(min-width: 1200px) {
+      width: 358px;
+      margin-bottom: unset;
+      margin-right: 12px;
     }
   }
 

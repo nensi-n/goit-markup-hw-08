@@ -8,6 +8,10 @@
     @include font;
     color: var(--transparant-color);
     transition: color 250ms var(--timing-function);
+
+    @media screen and(min-width: 1200px) {
+      align-items: flex-start;
+    }
   }
 
   &__link:hover,

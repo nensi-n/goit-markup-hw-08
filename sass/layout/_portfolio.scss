@@ -1,5 +1,9 @@
 .portfolio {
-  @include paddings;
+  @include paddings(60px, 60px);
+
+  @media screen and(min-width: 1200px) {
+    @include paddings;
+  }
 
   &_title-link {
     @include font($fw: 700, $fs: 18px, $lh: 36px, $ls: 0.06em);
@@ -13,16 +17,39 @@
   }
 
   &__cards-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    //display: flex;
+    //flex-wrap: wrap;
+    //margin-right: -30px;
+    //margin-bottom: -30px;
+    @media screen and(min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -30px;
+      margin-bottom: -30px;
+    }
   }
 
   &__cards-item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    //flex-basis: calc(100% / 3 - 30px);
+    //margin-right: 30px;
+    //margin-bottom: 30px;
+    width: 100%;
+    //max-width: 450px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and(min-width: 768px) {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-right: 30px;
+      margin-bottom: 30px;
+      //max-width: 354px;
+    }
+
+    @media screen and(min-width: 1200px) {
+      flex-basis: calc(100% / 3 - 30px);
+      //max-width: 370px;
+    }
   }
 
   &__cards-wrapper {
