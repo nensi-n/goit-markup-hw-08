@@ -1,12 +1,25 @@
 .logo {
   font-family: var(--secondary-font);
-  @include font($fw: 700, $fs: 26px, $lh: 31px);
+  @include font($fw: 700, $fs: 24px, $lh: 28px);
   color: var(--accent-color);
   display: inline-block;
 
+  @media screen and(min-width: 1200px) {
+    @include font($fw: 700, $fs: 26px, $lh: 31px);
+  }
+
   &__header {
-    margin-right: 93px;
-    @include paddings(24px, 25px);
+    @include paddings(21px, 21px);
+
+    @media screen and(min-width: 768px) {
+      margin-right: 88px;
+      padding: unset;
+    }
+
+    @media screen and(min-width: 1200px) {
+      margin-right: 93px;
+      @include paddings(24px, 25px);
+    }
   }
 
   &__theme_durk {

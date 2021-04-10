@@ -53,7 +53,9 @@
   }
 
   &__cards-wrapper {
-    padding: 20px 24px;
+    @include paddings(20px, 20px);
+    padding-left: 24px;
+    //padding-left: 20px 24px;
     border: 1px solid var(--border-color);
     box-sizing: border-box;
   }
