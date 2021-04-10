@@ -1,4 +1,7 @@
 .mobile-menu {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   position: fixed;
   top: 0;
   left: 50%;
@@ -9,6 +12,13 @@
   padding: 48px 40px;
   transform: translateY(-100%) translateX(-50%);
   transition: transform 250ms linear;
+
+  & .is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0) translateX(-50%);
+  }
 
   &__close-btn {
     background-color: transparent;
