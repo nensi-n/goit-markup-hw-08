@@ -7,6 +7,15 @@
 //transform: translateY(0) translateX(-50%);
 //}
 
+.mobile-menu.is-open {
+  //overflow: hidden;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transform: translateY(0) translateX(-50%);
+}
+
 .mobile-menu {
   opacity: 0;
   visibility: hidden;
@@ -102,14 +111,5 @@
   &__social-link {
     @include font($fw: 500, $fs: 18px, $lh: 22px, $ls: 0.02em);
     color: var(--accent-color);
-  }
-
-  & .is-open {
-    //overflow: hidden;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-
-    transform: translateY(0) translateX(-50%);
   }
 }
