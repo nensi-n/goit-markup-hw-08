@@ -1365,19 +1365,11 @@ img {
   background-color: var(--accent-color);
 }
 
-.is-open {
-  overflow: hidden;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transform: translateY(0) translateX(-50%);
-}
-
 .mobile-menu {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 50%;
   width: 100vw;
@@ -1482,5 +1474,12 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.mobile-menu .is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0) translateX(-50%);
 }
 /*# sourceMappingURL=main.css.map */
