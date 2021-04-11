@@ -13,11 +13,8 @@
   transform: translateY(-100%) translateX(-50%);
   transition: transform 250ms linear;
 
-  & .is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateY(0) translateX(-50%);
+  @media screen and(min-width: 768px) {
+    display: none;
   }
 
   &__close-btn {
@@ -27,12 +24,85 @@
     position: absolute;
     top: 10px;
     right: 15px;
+    cursor: pointer;
   }
 
-  @media screen and(min-width: 768px) {
-    display: none;
+  &__close-icon {
+    transition: fill 250ms var(--timing-function);
+
+    .mobile-menu__close-btn:hover &,
+    .mobile-menu__close-btn:focus & {
+      fill: var(--accent-color);
+    }
+  }
+
+  //&__nav-item {
+  //transition: color 250ms var(--timing-function);
+  //}
+
+  &__nav-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__nav-link {
+    @include font($fw: 500, $fs: 40px, $lh: 47px, $ls: 0.02em);
+    color: var(--second-color);
+    transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--accent-color);
+    }
+  }
+
+  &__contacts {
+    position: fixed;
+    bottom: 48px;
+  }
+
+  &__contacts-list {
+    margin-bottom: 62px;
+  }
+
+  &__contacts-item:not(:last-child) {
+    margin-bottom: 32px;
   }
 
   &__phone-link {
+    @include font($fw: 500, $fs: 34px, $lh: 40px, $ls: 0.02em);
+    color: var(--accent-color);
   }
+
+  &__mail-link {
+    @include font($fw: 500, $fs: 24px, $lh: 28px, $ls: 0.02em);
+    color: var(--main-color);
+  }
+
+  &__social-list {
+    @include alignment;
+    //flex-wrap: wrap;
+  }
+
+  &__social-item {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    &:last-child {
+      border-right: none;
+    }
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+
+  &__social-link {
+    @include font($fw: 500, $fs: 18px, $lh: 22px, $ls: 0.02em);
+    color: var(--accent-color);
+  }
+}
+
+.is-open {
+  overflow: hidden;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0) translateX(-50%);
 }

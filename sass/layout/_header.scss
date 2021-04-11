@@ -66,4 +66,13 @@
     border: none;
     padding: 0;
   }
+
+  &__burger-icon {
+    transition: fill 250ms var(--timing-function);
+
+    .header__burger-btn:hover &,
+    .header__burger-btn:focus & {
+      fill: var(--accent-color);
+    }
+  }
 }
