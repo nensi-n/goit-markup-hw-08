@@ -1,7 +1,8 @@
 .mobile-menu {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  //opacity: 0;
+  //visibility: hidden;
+  //pointer-events: none;
+
   position: fixed;
   top: 0;
   left: 50%;
@@ -35,10 +36,6 @@
       fill: var(--accent-color);
     }
   }
-
-  //&__nav-item {
-  //transition: color 250ms var(--timing-function);
-  //}
 
   &__nav-item:not(:last-child) {
     margin-bottom: 32px;
