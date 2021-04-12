@@ -97,6 +97,8 @@
   }
 }
 
-.crutch {
-  @include paddings(20px, 56px);
-}
+@media screen and(min-width: 768px) {
+  .crutch {
+    @include paddings(20px, 56px);
+  }
+    }
