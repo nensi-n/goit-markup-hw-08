@@ -885,12 +885,14 @@ img {
   .portfolio__cards-list {
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
     margin-right: -30px;
     margin-bottom: -30px;
   }
 }
 
 .portfolio__cards-item {
+  display: flex;
   width: 100%;
 }
 
@@ -913,13 +915,15 @@ img {
 }
 
 .portfolio__cards-wrapper {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid var(--border-color);
   box-sizing: border-box;
 }
 
 .portfolio__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow 250ms var(--timing-function);
 }
 
@@ -952,11 +956,6 @@ img {
 .portfolio__link:focus .portfolio__overlay {
   transform: translateY(0%);
   background-color: rgba(33, 150, 243, 0.9);
-}
-
-.crutch {
-  padding-top: 20px;
-  padding-bottom: 56px;
 }
 
 .footer {
