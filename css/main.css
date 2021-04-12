@@ -913,9 +913,7 @@ img {
 }
 
 .portfolio__cards-wrapper {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
+  padding: 20px 24px;
   border: 1px solid var(--border-color);
   box-sizing: border-box;
 }
@@ -954,6 +952,11 @@ img {
 .portfolio__link:focus .portfolio__overlay {
   transform: translateY(0%);
   background-color: rgba(33, 150, 243, 0.9);
+}
+
+.crutch {
+  padding-top: 20px;
+  padding-bottom: 56px;
 }
 
 .footer {
