@@ -1,12 +1,3 @@
-//.is-open {
-//overflow: hidden;
-// opacity: 1;
-//visibility: visible;
-// pointer-events: auto;
-
-//transform: translateY(0) translateX(-50%);
-//}
-
 .mobile-menu {
   opacity: 0;
   visibility: hidden;
@@ -87,7 +78,6 @@
 
   &__social-list {
     @include alignment;
-    //flex-wrap: wrap;
   }
 
   &__social-item {

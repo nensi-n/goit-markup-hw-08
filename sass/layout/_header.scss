@@ -37,7 +37,6 @@
   }
 
   &__contacts-link {
-    //@include alignment;
     @include font($fw: 500, $lh: 16px, $ls: 0.02em);
 
     color: var(--main-color);
