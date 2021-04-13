@@ -69,13 +69,16 @@
   }
 
   &__phone-link {
-    @include font($fw: 500, $fs: 34px, $lh: 40px, $ls: 0.02em);
+    @include font($fw: 500, $fs: 24px, $lh: 40px, $ls: 0.02em);
     color: var(--accent-color);
   }
 
   &__mail-link {
     @include font($fw: 500, $fs: 24px, $lh: 28px, $ls: 0.02em);
     color: var(--main-color);
+  }
+
+  @media screen and(min-width: 480px) {
   }
 
   &__social-list {
@@ -92,8 +95,18 @@
   }
 
   &__social-link {
-    @include font($fw: 500, $fs: 18px, $lh: 22px, $ls: 0.02em);
+    @include font($fw: 500, $fs: 12px, $lh: 22px, $ls: 0.02em);
     color: var(--accent-color);
+  }
+
+  @media screen and(min-width: 480px) {
+    &__phone-link {
+      @include font($fw: 500, $fs: 34px, $lh: 40px, $ls: 0.02em);
+    }
+
+    &__social-link {
+      @include font($fw: 500, $fs: 18px, $lh: 22px, $ls: 0.02em);
+    }
   }
 }
 
