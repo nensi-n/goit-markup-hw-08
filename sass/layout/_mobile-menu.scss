@@ -90,8 +90,8 @@
     &:last-child {
       border-right: none;
     }
-    padding-right: 10px;
-    margin-right: 10px;
+    padding-right: 5px;
+    margin-right: 5px;
   }
 
   &__social-link {
@@ -106,6 +106,11 @@
 
     &__social-link {
       @include font($fw: 500, $fs: 18px, $lh: 22px, $ls: 0.02em);
+    }
+
+    &__social-item {
+      padding-right: 10px;
+      margin-right: 10px;
     }
   }
 }
