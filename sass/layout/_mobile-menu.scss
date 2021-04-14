@@ -2,9 +2,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  // overflow: scroll;
-  overflow: auto;
-
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   left: 50%;
@@ -39,6 +37,10 @@
     }
   }
 
+  &__nav-list {
+    margin-bottom: 302px;
+  }
+
   &__nav-item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -56,8 +58,9 @@
   }
 
   &__contacts {
-    position: fixed;
-    bottom: 48px;
+    // position: fixed;
+    // bottom: 48px;
+    margin-bottom: 32px;
   }
 
   &__contacts-list {

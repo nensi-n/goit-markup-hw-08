@@ -1380,7 +1380,7 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  overflow: auto;
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   left: 50%;
@@ -1418,6 +1418,10 @@ img {
   fill: var(--accent-color);
 }
 
+.mobile-menu__nav-list {
+  margin-bottom: 302px;
+}
+
 .mobile-menu__nav-item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -1436,8 +1440,7 @@ img {
 }
 
 .mobile-menu__contacts {
-  position: fixed;
-  bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .mobile-menu__contacts-list {
