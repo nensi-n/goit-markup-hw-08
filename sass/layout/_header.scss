@@ -5,15 +5,20 @@
     @include alignment;
   }
 
-  &_contacts-list {
+  &__contacts-list {
     display: none;
     @media screen and(min-width: 768px) {
       display: initial;
+      //@include paddings(21px, 21px);
+    }
+
+    @media screen and(min-width: 768px) {
       @include paddings(21px, 21px);
     }
 
     @media screen and(min-width: 1200px) {
       @include alignment;
+      @include paddings(unset, unset);
     }
   }
 
@@ -23,15 +28,17 @@
     }
 
     &__contacts-item:not(:last-child) {
-      padding-bottom: 10px;
+      margin-bottom: 10px;
     }
   }
 
   @media screen and(min-width: 1200px) {
-    &__contacts-item:not(:last-child) {
-      padding-bottom: unset;
+    &__contacts-item {
+      @include paddings(32px, 32px);
     }
+
     &__contacts-item:not(:last-child) {
+      margin-bottom: unset;
       margin-right: 50px;
     }
   }

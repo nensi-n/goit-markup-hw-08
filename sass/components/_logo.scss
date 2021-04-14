@@ -13,7 +13,7 @@
 
     @media screen and(min-width: 768px) {
       margin-right: 88px;
-      padding: unset;
+      @include paddings(26px, 26px);
     }
 
     @media screen and(min-width: 1200px) {
