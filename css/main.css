@@ -1385,7 +1385,7 @@ img {
   top: 0;
   left: 50%;
   width: 100vw;
-  max-width: 480px;
+  max-width: 767px;
   height: 100vh;
   background-color: var(--main-lite-color);
   padding: 48px 40px;
@@ -1505,6 +1505,10 @@ img {
     padding-right: 10px;
     margin-right: 10px;
   }
+}
+
+.mobile-menu__current {
+  color: var(--accent-color);
 }
 
 .is-open {
