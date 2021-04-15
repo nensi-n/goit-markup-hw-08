@@ -15,9 +15,6 @@
   padding-right: 83px;
   transform: translateY(-100%) translateX(-50%);
   transition: transform 250ms var(--timing-function);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 
   @media screen and(min-width: 768px) {
     display: none;
@@ -42,15 +39,12 @@
     }
   }
 
-  //&__container {
-  // display: flex;
-  //flex-direction: column;
-  // justify-content: space-between;
-  //}
-
-  //&__nav-list {
-  //  margin-bottom: 302px;
-  //}
+  &__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   &__nav-item:not(:last-child) {
     margin-bottom: 32px;
